@@ -6,16 +6,15 @@ webhook_url:
 sections:
 - type: directory
   path: docs
-  label: Docs
+  label: Cursos
   create: documents
   match: "*.md"
   templates:
   - page
-- type: directory
-  path: blog
-  label: Blog
-  create: documents
-  match: "*.md"
+- type: document
+  path: tareas/*.md
+  label: Tareas
+  match: "**/*"
 - type: document
   path: sidebars.json
   label: Sidebar
